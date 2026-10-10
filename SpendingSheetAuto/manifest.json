@@ -1,0 +1,25 @@
+{
+    "name": "SpendingSheetAuto",
+    "description": "Automatically populates Spending Sheet from a Chrome Extension",
+    "version": "0.0.1",
+    "manifest_version": 3,
+
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {"48":"assets/paper.png"}
+    },
+
+    "icons": {
+            "16": "assets/paper.png",
+            "32": "assets/paper.png",
+            "48": "assets/paper.png",
+            "128": "assets/paper.png"
+    },
+
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+
+    "permissions": ["storage"]
+}
